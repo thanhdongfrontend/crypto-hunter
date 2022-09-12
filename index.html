@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="app-wrapper">
+            <div class="app__header">
+                <div class="app__logo">
+                    <img class="app__logo-img" src="./assets/img/logo.png" alt="logo">
+                </div>
+                <h3 class="app-heading">Crypto Performance in USD</h3>
+            </div>
+            <div class="app-content">
+                <div class="chart-container">
+                    <nav class="app__navbar">
+                        <div class="crypto-selection" id="selectedField">
+                            <img src="./assets/img/coin.png" alt="coin" class="crypto-selection-img" id="selectedImg">
+                            <span class="crypto-selection-name" id="selectedText">Coin</span>
+                            <i id="arrowIcon" class="crypto-selection-icon fa-sharp fa-solid fa-angle-right"></i>
+                            <ul id="coinList" class="selection-list">
+                                <li id="bitcoin" class="selection-item">
+                                    <img src="./assets/img/bitcoin.png" alt="bitcoin">
+                                    <span>BTC</span>
+                                </li>
+                                <li id="tether" class="selection-item">
+                                    <img src="./assets/img/tether.png" alt="tether">
+                                    <span>USDT</span>
+                                </li>
+                                <li id="shiba" class="selection-item">
+                                    <img src="./assets/img/shiba.png" alt="shiba">
+                                    <span>SHIB</span>
+                                </li>
+                                <li id="ethereum" class="selection-item">
+                                    <img src="./assets/img/logoeth5.png" alt="ethereum">
+                                    <span>ETH</span>
+                                </li>
+                                <li id="usd-coin" class="selection-item">
+                                    <img src="./assets/img/usd-coin-usdc-logo.png" alt="usd-coin">
+                                    <span>USDC</span>
+                                </li>
+                                <li id="binancecoin" class="selection-item">
+                                    <img src="./assets/img/bnb-bnb-logo.png" alt="binancecoin">
+                                    <span>BNB</span>
+                                </li>
+                                <li id="binance-usd" class="selection-item">
+                                    <img src="./assets/img/binance-usd-busd-logo.png" alt="binance-usd">
+                                    <span>BUSD</span>
+                                </li>
+                                <li id="ripple" class="selection-item">
+                                    <img src="./assets/img/xrp-xrp-logo.png" alt="ripple">
+                                    <span>XRP</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="currency-choice" id="selectedCurrency">
+                            <span class="crypto-selection-name" id="selectedText">Coin</span>
+                            <i id="arrowCurrency" class="currency-selection-icon fa-sharp fa-solid fa-angle-right"></i>
+                        </div> -->
+                        
+                    </nav>
+                    <div id="showChart">
+                        <div id="viewChart" class="chart-area">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="chart-footer">
+                            <span id="1day" class="btn">24 Hours</span>
+                            <span id="30days" class="btn">30 Days</span>
+                            <span id="90days" class="btn">3 Months</span>
+                            <span id="365days" class="btn">1 Year</span>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="coin-info">
+                    <img class="coin-info-img" id="coinInfoImgLg">
+                    <h3 id="coinName" class="coin-name"></h3>
+                    <p id="coinDes" class="coin-description"></p>
+                    <div class="real-time-info">
+                        <label id="rank-label" for="coinrank"></label>
+                        <span id="coin-rank" ></span>
+                        <label id="currentPrice-label" for="currentPrice"></label>
+                        <span id="currentPrice" ></span>
+                        <label id="marketCap-label" for="marketCap"></label>
+                        <span id="marketCap" ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/coin.js"></script>
+</body>
+</html>
