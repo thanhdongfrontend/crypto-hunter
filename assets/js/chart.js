@@ -1,4 +1,3 @@
-var intervaltime = 50000000;
 var  selectedCoin;
 var currency;
 var day;
@@ -7,11 +6,7 @@ bitcoin.addEventListener('click',function(){
     selectedCoin = 'bitcoin';
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
-    main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    main(); 
 })
 
 var tether = document.getElementById('tether');
@@ -20,10 +15,7 @@ tether.addEventListener('click',function(){
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
     main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    
 })
 
 var shiba = document.getElementById('shiba');
@@ -31,11 +23,7 @@ shiba.addEventListener('click',function(){
     selectedCoin = 'shiba-inu';
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
-    main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    main();   
 })
 
 var ethereum = document.getElementById('ethereum')
@@ -44,10 +32,7 @@ ethereum.addEventListener('click',function(){
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
     main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime); 
+     
 })
 
 var usd_coin = document.getElementById('usd-coin')
@@ -55,11 +40,7 @@ usd_coin.addEventListener('click',function(){
     selectedCoin = 'usd-coin';
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
-    main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    main();  
 })
 
 var binancecoin = document.getElementById('binancecoin')
@@ -67,11 +48,7 @@ binancecoin.addEventListener('click',function(){
     selectedCoin  = 'binancecoin';
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
-    main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    main();  
 })
 
 var binance_usd = document.getElementById('binance-usd')
@@ -79,11 +56,7 @@ binance_usd.addEventListener('click',function(){
     selectedCoin = 'binance-usd';
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
-    main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    main();   
 })
 
 var ripple = document.getElementById('ripple')
@@ -91,11 +64,7 @@ ripple.addEventListener('click',function(){
     selectedCoin = 'ripple';
     coinApi = "https://api.coingecko.com/api/v3/coins/" +selectedCoin;
     getCoinInfo();
-    main();
-    const interval = setInterval(function() {
-      getCoinInfo();
-      main();
-    }, intervaltime);
+    main();  
 })
 
 function main() {
@@ -149,8 +118,7 @@ const getDayMonthYear = (timestampt) => {
   };
   
   const chart = ({ dayList: dayList, pricesList: pricesList }) => {
-    // console.log(dayList);
-    // console.log(pricesList);
+    
   };
   const show = ({ dayList: dayList, pricesList: pricesList }) => {
     const labels = dayList;

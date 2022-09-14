@@ -9,7 +9,6 @@ function getCoinInfo () {
             render (market_cap_rank, description.en, market_data.current_price.usd, market_data.market_cap.usd,name,'$');    
         }
         if(currency == 'inr'){
-var curUnit;
             render (market_cap_rank, description.en, market_data.current_price.inr, market_data.market_cap.inr,name,'₹');
         }
     })
