@@ -15,7 +15,21 @@
                 <div class="app__logo">
                     <img class="app__logo-img" src="./assets/img/logo.png" alt="logo">
                 </div>
-                <h3 class="app-heading">Crypto Performance in USD</h3>
+                <h3 class="app-heading">Crypto Performance
+                    <span id="sub-heading" ></span>
+                </h3>
+                <div id="selected-currency" class="selected-currency">
+                    <span class="currency-selection-name" id="selectedCurrencyName">CUR</span>
+                    <i id="arrowIconCurr" class="curr-selection-icon fa-sharp fa-solid fa-angle-right"></i>
+                    <ul id="currency-list" class="currency-list">
+                        <li id="usd" class="currency-item">
+                            <span>USD</span>
+                        </li>
+                        <li id="inr" class="currency-item">
+                            <span>INR</span>
+                        </li>
+                    </ul>
+                </div>               
             </div>
             <div class="app-content">
                 <div class="chart-container">
@@ -69,13 +83,13 @@
                         <div id="viewChart" class="chart-area">
                             <canvas id="myChart"></canvas>
                         </div>
-                        <div class="chart-footer">
-                            <span id="1day" class="btn">24 Hours</span>
-                            <span id="30days" class="btn">30 Days</span>
-                            <span id="90days" class="btn">3 Months</span>
-                            <span id="365days" class="btn">1 Year</span>
-                        </div> 
                     </div>
+                    <div id="chart-footer" class="chart-footer">
+                        <span id="1day" class="btn">24 Hours</span>
+                        <span id="30days" class="btn">30 Days</span>
+                        <span id="90days" class="btn">3 Months</span>
+                        <span id="365days" class="btn">1 Year</span>
+                    </div> 
                 </div>
                 
                 <div class="coin-info">
