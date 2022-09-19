@@ -36,7 +36,7 @@ html {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background: #000 url('../img/BG.png') center /cover no-repeat;
+    background: var(--black-color) url('../img/BG.png') center /cover no-repeat;
     justify-content: center;
     align-items: center;
 }
@@ -91,7 +91,7 @@ html {
     display: flex;
     max-width: 120px;
     height: 50px;
-    background-color: #000;
+    background-color: var(--black-color);
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -130,7 +130,7 @@ html {
 
 .currency-item:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    color: #000;
+    color: var(--black-color);
 }
 
 
@@ -169,7 +169,7 @@ html {
     display: flex;
     max-width: 120px;
     height: 50px;
-    background-color: #000;
+    background-color: var(--black-color);
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -281,7 +281,7 @@ html {
     display: flex;
     max-width: 120px;
     height: 50px;
-    background-color: #000;
+    background-color: var(--black-color);
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -324,7 +324,7 @@ html {
     display: flex;
     max-width: 120px;
     height: 50px;
-    background-color: #000;
+    background-color: var(--black-color);
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -357,7 +357,7 @@ html {
 
 .interval-item:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    color: #000;
+    color: var(--black-color);
 }
 
 .btn {
@@ -372,11 +372,11 @@ html {
 }
 .btn:hover {
     background-color: yellow;
-    color: #000;
+    color: var(--black-color);
 }
 .btn.clicked {
     background-color: yellow !important;
-    color: #000;
+    color: var(--black-color);
     font-weight: 700;
 }
 
