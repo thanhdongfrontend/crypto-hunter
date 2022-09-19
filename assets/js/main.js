@@ -61,7 +61,7 @@ for (opt of curOption){
         subHeading.textContent = 'in ' + this.textContent;
         currency = this.textContent.toLowerCase().trim();
         chatFooter.classList.add('active')
-        label = 'Price ( Pass ' + day + ' Day) in '+ currency.toLocaleUpperCase();
+        label = 'Price ( Pass ' + day + ' Days) in '+ currency.toLocaleUpperCase();
         getCoinInfo();
         main();
     })

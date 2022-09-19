@@ -197,7 +197,7 @@ three_months.addEventListener('click',function(){
 
 year.addEventListener('click',function(){
     duration = 365;
-    day = 135;
+    day = 365;
     label = 'Price ( Pass ' + day + ' Days) in ' + currency.toLocaleUpperCase();
     $("canvas#myChart").remove();
     main();

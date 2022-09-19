@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
 </head>
 <body>
     <div class="page-wrapper">
@@ -32,6 +33,19 @@
                 </div>               
             </div>
             <div class="app-content">
+                <div class="coin-info">
+                    <img class="coin-info-img" id="coinInfoImgLg" src="./assets/img/633px-Cryptocurrency_Logo.png">
+                    <h3 id="coinName" class="coin-name">Crypto</h3>
+                    <p id="coinDes" class="coin-description">Crypto is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.</p>
+                    <div class="real-time-info">
+                        <label id="rank-label" for="coinrank">Rank:</label>
+                        <span id="coin-rank" >...</span>
+                        <label id="currentPrice-label" for="currentPrice">Currrent Price:</label>
+                        <span id="currentPrice" >...</span>
+                        <label id="marketCap-label" for="marketCap">Market Cap:</label>
+                        <span id="marketCap" >...</span>
+                    </div>
+                </div>
                 <div class="chart-container">
                     <nav class="app__navbar">
                         <div class="crypto-selection" id="selectedField">
@@ -76,7 +90,7 @@
                         <div class="setInterval">
                             <span id="selected-interval" class="selectedInterval">Interval</span>
                             <i id="arrowIconInte" class="int-selection-icon fa-sharp fa-solid fa-angle-right"></i>
-                            <ul id ="interval-list" class="inteval-list">
+                            <ul id ="interval-list" class="interval-list">
                                 <li id="1000" class="interval-item">
                                     <span>1 seconds</span>
                                 </li>
@@ -109,19 +123,7 @@
                     </div> 
                 </div>
                 
-                <div class="coin-info">
-                    <img class="coin-info-img" id="coinInfoImgLg">
-                    <h3 id="coinName" class="coin-name"></h3>
-                    <p id="coinDes" class="coin-description"></p>
-                    <div class="real-time-info">
-                        <label id="rank-label" for="coinrank"></label>
-                        <span id="coin-rank" ></span>
-                        <label id="currentPrice-label" for="currentPrice"></label>
-                        <span id="currentPrice" ></span>
-                        <label id="marketCap-label" for="marketCap"></label>
-                        <span id="marketCap" ></span>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

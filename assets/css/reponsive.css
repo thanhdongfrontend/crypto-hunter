@@ -1,0 +1,64 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .page-wrapper {
+        width: unset;
+        height: unset;
+        min-height: 100vh;
+    }
+
+    .app-wrapper {
+        height: unset;
+        width: unset;
+    }
+
+    .app-content {
+        flex-direction: column;
+    }
+
+    .coin-info {
+        width: 100%;
+        padding: 0 2px;
+        margin: unset;
+        border: unset;
+        box-shadow: unset;
+    }
+
+    .coin-info-img {
+        width: 200px;
+        height: unset;
+    }
+
+    .coin-name {
+        font-size: 48px;
+    }
+
+    .real-time-info {
+        position: relative;
+        top: unset;
+    }
+    .chart-container {
+        width: 100%;
+    }
+
+    .chart-area {
+        min-height: unset;
+    }
+
+    .chart-footer {
+        margin: 20px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .app-wrapper {
+        min-height: 100vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .app-heading {
+        display: none   ;
+    }
+}
