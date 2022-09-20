@@ -1,6 +1,8 @@
-var  selectedCoin;
-var currency;
-var day;
+var  selectedCoin = 'bitcoin';
+var label = 'Price (Pass 1 Day) in USD'
+var currency = 'usd';
+var day = 1;
+var duration = '1'
 var bitcoin = document.getElementById('bitcoin');
 bitcoin.addEventListener('click',function(){
     selectedCoin = 'bitcoin';

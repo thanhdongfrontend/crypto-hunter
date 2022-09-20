@@ -1,4 +1,4 @@
-var coinApi;
+var coinApi = "https://api.coingecko.com/api/v3/coins/bitcoin";
 var coinInfoImgLg = document.getElementById('coinInfoImgLg')
 function getCoinInfo () {
     fetch(coinApi)
@@ -17,6 +17,18 @@ function getCoinInfo () {
     })
 }
 
+
+function getDefaultCoinInfo () {
+    fetch(coinApi)
+    .then((response) => response.json())
+    .then((data) => {
+        const { market_cap_rank, description, market_data, name} = data;
+        render (market_cap_rank, description.en, market_data.current_price.usd, market_data.market_cap.usd,name,'$');    
+    })
+    .catch((error) => {
+        console.log("Error:",error);
+    })
+}
 
 function render (marketCapRank, des, curPrice, marketCap, name,curUnit) {
     const formater = new Intl.NumberFormat('en-IN',{ maximumSignificantDigits: 13 });

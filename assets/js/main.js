@@ -9,18 +9,17 @@ const currencyList = document.getElementById('currency-list');
 const curOption = document.getElementsByClassName('currency-item');
 const arrowCur = document.getElementById('arrowIconCurr');
 const subHeading = document.getElementById('sub-heading');
-const chatFooter = document.getElementById('chart-footer');
 const arrowInteval = document.getElementById('arrowIconInte');
 const intervalList = document.getElementById('interval-list');
 const intervalItems = document.getElementsByClassName('interval-item');
 const selectedInterval = document.getElementById('selected-interval');
 
 var intervaltime;
-
-var interval = setInterval(function(){
-    getCoinInfo();
+var timeout = setTimeout(function() {
+    getDefaultCoinInfo()
     main();
-},9999999999)
+},1)
+var interval;
 
 arrowInteval.addEventListener('click',function(){
     intervalList.classList.toggle('active');
@@ -72,7 +71,6 @@ for (opt of curOption){
         arrowCur.classList.toggle('fa-angle-right')
         subHeading.textContent = 'in ' + this.textContent;
         currency = this.textContent.toLowerCase().trim();
-        chatFooter.classList.add('active')
         label = 'Price ( Pass ' + day + ' Days) in '+ currency.toLocaleUpperCase();
         getCoinInfo();
         main();
