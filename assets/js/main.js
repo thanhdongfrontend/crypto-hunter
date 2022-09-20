@@ -36,6 +36,9 @@ for (option of options) {
         selectedText.textContent = this.textContent;
         var imgUrl = $(this).find("img").attr("src");
         coinList.classList.toggle('active')
+        arrowIcon.classList.toggle('down')
+        arrowIcon.classList.toggle('fa-xmark')
+        arrowIcon.classList.toggle('fa-angle-right')
         selectedImg.src = imgUrl;
         coinInfoImgLg.src = imgUrl;
     })
@@ -46,6 +49,9 @@ for(inter of intervalItems) {
     $(inter).click(function(){
         selectedInterval.textContent = this.textContent;
         intervalList.classList.toggle('active');
+        arrowInteval.classList.toggle('down')
+        arrowInteval.classList.toggle('fa-xmark')
+        arrowInteval.classList.toggle('fa-angle-right')
         intervaltime = Number(this.id);
         clearInterval(interval);
         interval = setInterval(function(){
@@ -60,7 +66,10 @@ for(inter of intervalItems) {
 for (opt of curOption){
     $(opt).click(function(){
         selectedCurrencyName.textContent = this.textContent;
-        currencyList.classList.toggle('active');
+        currencyList.classList.toggle('active')
+        arrowCur.classList.toggle('down')
+        arrowCur.classList.toggle('fa-xmark')
+        arrowCur.classList.toggle('fa-angle-right')
         subHeading.textContent = 'in ' + this.textContent;
         currency = this.textContent.toLowerCase().trim();
         chatFooter.classList.add('active')
