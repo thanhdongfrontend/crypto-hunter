@@ -35,6 +35,7 @@ for (option of options) {
     $(option).click(function(){
         selectedText.textContent = this.textContent;
         var imgUrl = $(this).find("img").attr("src");
+        coinList.classList.toggle('active')
         selectedImg.src = imgUrl;
         coinInfoImgLg.src = imgUrl;
     })
@@ -44,6 +45,7 @@ for (option of options) {
 for(inter of intervalItems) {
     $(inter).click(function(){
         selectedInterval.textContent = this.textContent;
+        intervalList.classList.toggle('active');
         intervaltime = Number(this.id);
         clearInterval(interval);
         interval = setInterval(function(){
@@ -58,6 +60,7 @@ for(inter of intervalItems) {
 for (opt of curOption){
     $(opt).click(function(){
         selectedCurrencyName.textContent = this.textContent;
+        currencyList.classList.toggle('active');
         subHeading.textContent = 'in ' + this.textContent;
         currency = this.textContent.toLowerCase().trim();
         chatFooter.classList.add('active')
