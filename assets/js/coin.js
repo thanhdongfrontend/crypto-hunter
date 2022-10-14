@@ -41,4 +41,4 @@ function render (marketCapRank, des, curPrice, marketCap, name,curUnit) {
     document.getElementById('marketCap-label').innerHTML = 'Market Cap:'
     document.getElementById('marketCap').innerHTML = curUnit + " " + marketCap.toLocaleString();
 }
-getCoinInfo();
+getDefaultCoinInfo();
