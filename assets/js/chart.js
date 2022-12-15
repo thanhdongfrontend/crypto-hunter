@@ -119,44 +119,44 @@ const getDayMonthYear = (timestampt) => {
     return `${day}/${month}/${year}`;
   };
   
-  const chart = ({ dayList: dayList, pricesList: pricesList }) => {
+const chart = ({ dayList: dayList, pricesList: pricesList }) => {
     
-  };
-  const show = ({ dayList: dayList, pricesList: pricesList }) => {
-    const labels = dayList;
+};
+const show = ({ dayList: dayList, pricesList: pricesList }) => {
+  const labels = dayList;
 
-    const data = {
-      labels: labels,
-      datasets: [
-        {
-          label: label,
-          backgroundColor: "transparent",
-          borderColor: "#EFFF00 ",
-          data: pricesList,
-          pointRadius: 0,
-          borderWidth: 3,
-          pointBorderColor: '#EFFF00',
-          pointBackgroundColor: '#EFFF00',
-          pointHoverBackgroundColor: '#EFFF00',
-          pointHoverBorderColor: '#EFFF00',
-        },
-      ],
-    };
-  
-    const config = {
-      type: "line",
-      data: data,
-      options: {
-        hover: {
-            intersect: false,
-        }
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: label,
+        backgroundColor: "transparent",
+        borderColor: "#EFFF00 ",
+        data: pricesList,
+        pointRadius: 0,
+        borderWidth: 3,
+        pointBorderColor: '#EFFF00',
+        pointBackgroundColor: '#EFFF00',
+        pointHoverBackgroundColor: '#EFFF00',
+        pointHoverBorderColor: '#EFFF00',
       },
-    };
-  
-    document.getElementById("viewChart").innerHTML =
-      '<canvas id="myChart"></canvas>';
-  
-    const myChart = new Chart(document.getElementById("myChart"), config);
+    ],
+  };
+
+  const config = {
+    type: "line",
+    data: data,
+    options: {
+      hover: {
+          intersect: false,
+      }
+    },
+  };
+
+  document.getElementById("viewChart").innerHTML =
+    '<canvas id="myChart"></canvas>';
+
+  const myChart = new Chart(document.getElementById("myChart"), config);
 };
 
 $('.btn').on('click', function() {
